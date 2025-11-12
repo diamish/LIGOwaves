@@ -1,1 +1,28 @@
+// HDF5Reader.h
+#pragma once
+#include <string>
+#include <vector>
+
+struct StrainSeries {
+    std::vector<double> data;
+    double start_time;
+    double sample_rate;
+};
+
+class HDF5Reader {
+public:
+    static StrainSeries read_strain(const std::string& file_path, const std::string& dataset="/strain/Strain");
+};
+
+// HDF5Reader.cpp (skeleton)
+#include "HDF5Reader.h"
+#include <H5Cpp.h>
+using namespace H5;
+
+StrainSeries HDF5Reader::read_strain(const std::string& file_path, const std::string& dataset) {
+    StrainSeries s;
+    // open file, read dataset into s.data, read attributes for start_time and sample_rate
+    // Keep this minimal — see HDF5 docs for details
+    return s;
+}
 
