@@ -1,7 +1,7 @@
 // simple CLI scaffold for the pipeline
 #include "iostream"
 #include <string>
-#include "HDF5Reader.h"
+#include "HDF5Reader.cpp/HDF5Reader.h"
 #include "PSD.h"
 #include "Whiten.h"
 #include "BurstDetector.h"
